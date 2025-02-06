@@ -41,9 +41,6 @@ function processQRCode(decodedText) {
           SpreadsheetApp.flush();             // Force the change to apply immediately
           cell.setValue('Checked In');        // Set the value of the cell
           SpreadsheetApp.flush();             // Apply changes again
-
-          // Log to confirm the action
-          Logger.log(`Set background color to green for cell: ${cell.getA1Notation()} on sheet "${sheet.getName()}"`);
           
           return `Ticket ID: ${ticketID} - Checked In Successfully.`;
         }

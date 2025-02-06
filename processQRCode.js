@@ -58,4 +58,3 @@ function processQRCode(decodedText) {
   }
 }
 
-// testing
